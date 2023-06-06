@@ -1,0 +1,1 @@
+# lighthouse-di-public-image
