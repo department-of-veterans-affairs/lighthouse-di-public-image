@@ -1,0 +1,8 @@
+name: create-release-on-tag-push
+run-name: "Create Release on Tag Push"
+on:
+  create:
+jobs:
+  create-release:
+    if: ${{ github.ref_type == 'tag' }}
+    uses: department-of-veterans-affairs/lighthouse-di-documentation/.github/workflows/create-release-on-tag-push.yml@main
